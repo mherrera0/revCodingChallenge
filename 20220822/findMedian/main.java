@@ -30,6 +30,7 @@ nums2.length == n
 */
 import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.List;
 public class Main
 {
     public static void main(String[] args) {
@@ -55,7 +56,7 @@ public class Main
             nums1[i] = (Math.random() * 212) - 106;//possible values of 1st array
         for(int i = 0; i < n; i++) //fill 1st array
             nums2[i] = (Math.random() * 212) - 106;//possible values of 2nd array
-        ArrayList<Double> mergedArrays = new ArrayList<Double>();
+        List<Double> mergedArrays = new ArrayList<Double>();
         mergedArrays.addAll(Arrays.asList(nums1));
         mergedArrays.addAll(Arrays.asList(nums2));
         Double[] sortMe = mergedArrays.toArray(new Double[mergedArrays.size()]);
